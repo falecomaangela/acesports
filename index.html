@@ -33,15 +33,16 @@
 <script>
 const whatsapp='5511982028447';
 const products=[
-{name:'TMount Hinoki AI Smart',category:'Caneta',price:1500,description:'Madeira Hinoki selecionada para quem busca toque, controle e acabamento premium.',image:'',badge:'Destaque'},
-{name:'Yinhe Kiso Hinoki 1-Ply',category:'Caneta',price:1500,description:'Madeira japonesa estilo caneta, construção 1-Ply e proposta clássica de alto nível.',image:'',badge:'1-Ply'},
-{name:'KTS Gold',category:'KTS',price:2500,description:'Modelo especial KTS com construção premium para jogadores exigentes.',image:'',badge:'Premium'},
-{name:'KTS Prime',category:'KTS',price:2500,description:'Madeira japonesa com fabricação na Coreia do Sul e acabamento diferenciado.',image:'',badge:'Premium'},
-{name:'KTS Red',category:'KTS',price:1500,description:'Opção KTS de excelente construção, ideal para quem busca exclusividade.',image:'',badge:'Especial'},
-{name:'Hirunit Lee Jin Kwon',category:'Clássica',price:800,description:'Raquete clássica com proposta ofensiva e ótimo equilíbrio entre velocidade e controle.',image:'',badge:'Clássica'},
-{name:'Kim Taek F700',category:'Clássica',price:900,description:'Modelo clássico com velocidade média e sensação equilibrada durante o jogo.',image:'',badge:'Velocidade média'},
-{name:'Kim Taek F720',category:'Clássica',price:900,description:'Construção 5+2 OFF, indicada para jogo rápido e ofensivo.',image:'',badge:'5+2 OFF'},
-{name:'Kokutaku X-Blade',category:'Clássica',price:2500,description:'Raquete clássica especial em construção de uma única folha, com acabamento marcante.',image:'',badge:'1 folha'}
+{name:'Goziptong King Zebra',category:'Raquetes (Madeiras)',price:2000,description:'Madeira artesanal produzida com Zebra Wood, madeira nobre africana. As cores e os veios são naturais da própria madeira, sem utilização de tinta, tornando cada peça única.',image:'fotos/goziptong-king-zebra.jpg',badge:'Zebra Wood'},
+{name:'Goziptong Queen Zebra',category:'Raquetes (Madeiras)',price:2000,description:'Madeira artesanal produzida com Zebra Wood, madeira nobre africana. As cores e os veios são naturais da própria madeira, sem utilização de tinta, tornando cada peça única.',image:'fotos/goziptong-queen-zebra.jpeg',badge:'Zebra Wood'},
+{name:'Goziptong Super Zebra',category:'Raquetes (Madeiras)',price:2500,description:'Madeira artesanal produzida com Zebra Wood, madeira nobre africana. As cores e os veios são naturais da própria madeira, sem utilização de tinta, tornando cada peça única.',image:'fotos/goziptong-super-zebra.jpg',badge:'Zebra Wood'},
+{name:'Kim Taek Soo F700',category:'Raquetes (Madeiras)',price:900,description:'5+2 OFF, Inner Fiber e Hyper Carbon. Controle excelente, velocidade média, peso aproximado de 87 g e espessura de 5,8 mm.',image:'fotos/kim-taek-f700-f720.jpeg',badge:'Velocidade média'},
+{name:'Kim Taek Soo F720',category:'Raquetes (Madeiras)',price:900,description:'5+2 OFF e Hyper Carbon. Controle excelente, velocidade rápida, peso aproximado de 87 g e espessura de 5,8 mm.',image:'fotos/kim-taek-f700-f720.jpeg',badge:'Velocidade rápida'},
+{name:'HiRunit Lee Jin Kwon ALC',category:'Raquetes (Madeiras)',price:800,description:'Construção 5-ply wood + 2-ply ALC, controle excelente e velocidade rápida. Peso aproximado de 87 g e espessura de 5,8 mm.',image:'fotos/lee-jin-kwon-alc-inner.jpeg',badge:'ALC'},
+{name:'HiRunit Lee Jin Kwon Inner ALC',category:'Raquetes (Madeiras)',price:800,description:'Construção 5-ply wood + 2-ply ALC, controle e velocidade média. Peso aproximado de 87 g e espessura de 5,8 mm.',image:'fotos/lee-jin-kwon-alc-inner.jpeg',badge:'Inner ALC'},
+{name:'Andro Hexer Powergrip',category:'Borrachas',price:350,description:'Seu alto nível de grip aumenta a potência da bola e favorece a criação de um arco estável. Conta com Top Sheet desenvolvido para bolas ABS e esponja de última geração com densidade 47,5°.',image:'fotos/andro-hexer-powergrip.jpeg',badge:'47,5°'},
+{name:'Andro Hexer Duro (Tensor Bios 4G)',category:'Borrachas',price:350,description:'Desenvolvida para jogadores que procuram maior spin, velocidade e durabilidade, combinando desempenho ofensivo com maior vida útil.',image:'fotos/andro-hexer-duro.jpeg',badge:'Tensor Bios 4G'},
+{name:'Andro Plasma 470',category:'Borrachas',price:350,description:'Desenvolvida para jogadores de alto nível, possui esponja de densidade 47°, oferecendo boa combinação de maciez e controle. Proporciona alta velocidade, especialmente nas jogadas de Power Drive.',image:'fotos/andro-plasma-470.jpeg',badge:'47°'}
 ];
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});const productsEl=document.getElementById('products'),searchEl=document.getElementById('search'),categoryEl=document.getElementById('category'),emptyEl=document.getElementById('empty');
 [...new Set(products.map(p=>p.category))].sort().forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;categoryEl.appendChild(o)});
